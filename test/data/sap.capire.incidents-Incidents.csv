@@ -1,0 +1,7 @@
+ID;customer_BusinessPartner;title;urgency_code;status_code
+550e8400-e29b-41d4-a716-446655440000;1000000;Network Outage;H;N
+550e8400-e29b-41d4-a716-446655440001;1000001;Software License Expired;M;I
+550e8400-e29b-41d4-a716-446655440002;1000002;Server Overheating;H;N
+550e8400-e29b-41d4-a716-446655440003;1000000;Data Backup Failure;H;I
+550e8400-e29b-41d4-a716-446655440004;1000003;Application Performance Issue;M;R
+550e8400-e29b-41d4-a716-446655440005;1000001;Security Patch Update;L;A
