@@ -26,7 +26,25 @@ annotate IncidentService.Incidents with {
     title       @title: 'Title';
     urgency     @title: 'Urgency';
     status      @title: 'Status';
-    customer    @title: 'Customer';
+    customer    @title: 'Customer' @(Common: {
+        Text: customer.BusinessPartnerFullName,
+        TextArrangement: #TextOnly,
+        ValueList: {
+            Label: 'Customers',
+            CollectionPath: 'Customers',
+            Parameters: [
+                {
+                    $Type: 'Common.ValueListParameterInOut',
+                    LocalDataProperty: customer_ID,
+                    ValueListProperty: 'ID'
+                },
+                {
+                    $Type: 'Common.ValueListParameterDisplayOnly',
+                    ValueListProperty: 'fullName'
+                }
+            ]
+        }
+    });
 }
 
 annotate IncidentService.Incidents with @(

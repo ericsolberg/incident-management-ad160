@@ -20,7 +20,7 @@ annotate service.Incidents with @(
         },
         {
             $Type : 'UI.DataField',
-            Value : customer_BusinessPartner,
+            Value : customer.fullName,
             Label : 'Customer',
         },
     ]
